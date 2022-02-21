@@ -1,0 +1,23 @@
+{
+  "name": "passport-lambda",
+  "version": "1.0.0",
+  "description": "Lambda that handles API requests for passport users. Written in Node.js and running in AWS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eriklungulescu/passport-lambda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eriklungulescu/passport-lambda/issues"
+  },
+  "homepage": "https://github.com/eriklungulescu/passport-lambda#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1077.0",
+    "lambda-api": "^0.11.2"
+  }
+}
