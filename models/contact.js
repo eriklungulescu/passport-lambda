@@ -1,8 +1,10 @@
 class contact {
-    constructor(userId, phoneNumber, email) {
+    constructor(userId, name, mobile, linkedin, facebook) {
         this.userId = userId;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
+        this.mobile = mobile;
+        this.name = name;
+        this.linkedin = linkedin;
+        this.facebook = facebook;
     }
 }
 

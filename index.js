@@ -26,10 +26,12 @@ api.get('/contacts/:userId', async (req, res) => {
 
 api.post('/contacts', async (req, res) => {
     console.info("Successfully hit post /contacts");
+    console.info("Items: " + req.body.userId + " " + req.body.name + " " + req.body.mobile + " " + req.body.linkedin + " " + req.body.facebook);
+    // console.info(JSON.stringify(req.body));
     try {
         var params = {
             TableName: 'passport-users',
-            Item: new contact(req.body.userId, req.body.phoneNumber, req.body.email)
+            Item: new contact(req.body.userId, req.body.name, req.body.mobile, req.body.linkedin, req.body.facebook)
         };
         var dynamodbRes = await ddbClient.put(params).promise();
         console.info("Successfully put object in DynamoDb");
